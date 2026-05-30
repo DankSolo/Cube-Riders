@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cube Rider Generator</title>
+</head>
+<body>
+
+<h1>Cube Rider Generator</h1>
+
+<input type="text" id="nftId" placeholder="Enter NFT ID">
+
+<br><br>
+
+<input type="file" id="imageUpload">
+
+<br><br>
+
+<button onclick="generateCube()">
+Cube My Rider
+</button>
+
+<p id="result"></p>
+
+<script>
+function generateCube() {
+  const nftId = document.getElementById("nftId").value;
+
+  document.getElementById("result").innerHTML =
+    "Generating Cube Rider for NFT #" + nftId;
+}
+</script>
+
+</body>
+</html>
